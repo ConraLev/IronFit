@@ -11,14 +11,14 @@
     <meta name="description"
         content="¿Quieres ponerte en forma pero no sabes por dónde empezar? No busque más allá de Iron Fit. Ofrecemos entrenamientos personalizados para todos los niveles de condición física.">
     <title>IRON FIT</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/media.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="shortcut icon" href="assets/images/favicon/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/media.css">
+    <link rel="stylesheet" href="/assets/css/animation.css">
+    <link rel="shortcut icon" href="/assets/images/favicon/Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script async src="assets/JS/script.js"></script>
+    <script async src="/assets/JS/script.js"></script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <i class="fa-solid fa-bars" style="color: #202128;"></i>
         </label>
         <a href="#inicio" class="enlace">
-            <img src="assets/images/Logo.png" alt="Logo Iron Fit" class="logo">
+            <img src="/assets/images/Logo.png" alt="Logo Iron Fit" class="logo">
         </a>
         <ul>
             <li><a href="#inicio">Inicio</a></li>
@@ -40,6 +40,13 @@
     </nav>
 
     <main>
+
+        <img class="img_gim" src="assets/images/gimnasio.jpg" alt="IMAGEN GIMNASIO">
+    <!--     <div class="intro">
+        <h1>IRON-FIT</h1>
+        <h2> Centro de fitness</h2>
+        </div> -->
+
         <section id="inicio">
             <h2>¡Bienvenido a <i class="color-change-3x" id="resaltado"> Iron Fit </i>!</h2>
             <p>En nuestro centro de fitness, nos enorgullece ofrecer una amplia variedad de opciones de entrenamiento y
@@ -60,6 +67,15 @@
                 acondicionamiento físico de manera efectiva.</p>
             <p>¡Esperamos darle la bienvenida en nuestro gimnasio y ayudarlo a alcanzar sus metas de acondicionamiento
                 físico!</p>
+            <br>
+            <div class="local">
+                <div> <img src="assets/images/gim_1.jpg" alt=""></div>
+                <div> <img src="assets/images/gim_2.jpg" alt=""></div>
+                <div> <img src="assets/images/gim_3.jfif" alt=""></div>
+            </div>    
+
+
+
         </section>
 
         <section id="servicios">
@@ -81,6 +97,13 @@
                 tus objetivos. Ya sea que busques perder peso, aumentar tu masa muscular o simplemente mejorar tu salud
                 en general, tenemos un programa de entrenamiento para ti. ¡Ven y descubre todo lo que podemos hacer por
                 ti y tu bienestar!</p>
+            <br>
+            <div class="servicios_img">
+                <div> <img src="assets/images/ser_1.jpg" alt=""></div>
+                <div> <img src="assets/images/ser_2.jpg" alt=""></div>
+                <div> <img src="assets/images/ser_3.jpg" alt=""></div>
+            </div>    
+            
 
         </section>
 
@@ -121,21 +144,21 @@
                     <h2>CONTACTO</h2>
                     <p>Contáctese con nosotros y le responderemos a la brevedad.</p>
                 </div>
-                <form id="form">
+                <form id="form" method="POST">
                     <input type="text" name="nombre" id="name"  placeholder="Nombre Completo">
                     <input type="email" name="correo" id="correo" size="30"  placeholder="Correo Electronico">
                     <textarea name="comentario" id="comentario" cols="30" rows="5" 
                         placeholder="Ingrese aquí su comentario"></textarea>
                     <input type="submit" value="Enviar" class="bottom">
                     <div id="form_msj" class="form_msj">
-                        <p> Comentario Enviado</p>
+                        <p id="form_msj_user"> </p>
                     </div>
                     <div id="form_error" class="form_error">
                         <p id="errors"> </p>
                     </div>
                 </form>
             </div>
-        </section>
+        </section>z
     </main>
 
     <footer>
